@@ -1,0 +1,607 @@
+{% load static %}
+<html class="wide wow-animation" lang="en">
+  <head>
+    <title>CEB David Lavoisier</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="icon" href="{% static 'pagep/images/favicon.ico' %}" type="image/x-icon">
+    <!-- Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Montserrat:400,500,600,700%7CPoppins:400%7CTeko:300,400">
+    <link rel="stylesheet" href="{% static 'pagep/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'pagep/css/fonts.css' %}">
+    <link rel="stylesheet" href="{% static 'pagep/css/style.css' %}">
+    <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
+  </head>
+  <body>
+    <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="{% static 'pagep/images/ie8-panel/warning_bar_0000_us.jpg' %}" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <div class="preloader">
+      <div class="preloader-body">
+        <div class="cssload-container">
+          <div class="cssload-speeding-wheel"></div>
+        </div>
+        <p>Loading...</p>
+      </div>
+    </div>
+    <div class="page">
+      <header class="section page-header">
+        <!-- RD Navbar-->
+        <div class="rd-navbar-wrap">
+          <nav class="rd-navbar rd-navbar-corporate" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="106px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+            <div class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1" data-rd-navbar-toggle=".rd-navbar-collapse"><span></span></div>
+            <div class="rd-navbar-aside-outer">
+              <div class="rd-navbar-aside">
+                <!-- RD Navbar Panel-->
+                <div class="rd-navbar-panel">
+                  <!-- RD Navbar Toggle-->
+                  <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                  <!-- RD Navbar Brand-->
+                  <div class="rd-navbar-brand">
+                    <!--Brand--><a class="brand" href="{% url 'pagep:index' %}"><img src="{% static 'pagep/images/logo.png' %}" alt="" width="225" height="18"/></a>
+                  </div>
+                </div>
+                <div class="rd-navbar-aside-right rd-navbar-collapse">
+                  <ul class="rd-navbar-corporate-contacts">
+                    <li>
+                      <div class="unit unit-spacing-xs">
+                        <div class="unit-left"><span class="icon fa fa-clock-o"></span></div>
+                        <div class="unit-body">
+                          <p>7h30<span></span> — 16h<span></span></p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="unit unit-spacing-xs">
+                        <div class="unit-left"><span class="icon fa fa-phone"></span></div>
+                        <div class="unit-body"><a class="link-phone" href="tel:#">(+237) 678811933</a></div>
+                      </div>
+                    </li>
+                  </ul><a class="button button-md button-default-outline-2 button-ujarak" href="{% url 'contact:contact' %}">Nous rejoindre</a>
+                </div>
+              </div>
+            </div>
+            <div class="rd-navbar-main-outer">
+              <div class="rd-navbar-main">
+                <div class="rd-navbar-nav-wrap">
+                  <ul class="list-inline list-inline-md rd-navbar-corporate-list-social">
+                    <li><a class="icon fa fa-facebook" href="#"></a></li>
+                    <li><a class="icon fa fa-twitter" href="#"></a></li>
+                    <li><a class="icon fa fa-google-plus" href="#"></a></li>
+                    <li><a class="icon fa fa-instagram" href="#"></a></li>
+                  </ul>
+                  <!-- RD Navbar Nav-->
+                  <ul class="rd-navbar-nav">
+                    <li class="rd-nav-item active"><a class="rd-nav-link" href="{% url 'pagep:index' %}">Acceuil</a>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="{% url 'about_us:about' %}">À propos de Nous</a>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="{% url 'historique:historique' %}">Historique et Actus</a>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="{% url 'contact:contact' %}">Contactez Nous</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- Swiper-->
+      <section class="section swiper-container swiper-slider swiper-slider-corporate swiper-pagination-style-2" data-loop="true" data-autoplay="5000" data-simulate-touch="true" data-nav="false" data-direction="vertical">
+        <div class="swiper-wrapper text-left">
+          <div class="swiper-slide context-dark" data-slide-bg="{% static 'pagep/images/slider-4-slide-1-1920x678.jpg' %}">
+            <div class="swiper-slide-caption section-md">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-10">
+                    <h6 class="text-uppercase" data-caption-animate="fadeInRight" data-caption-delay="0">Decouvrez le meilleur endroit pour l'éducation de nos Enfants</h6>
+                    <h2 class="oh font-weight-light" data-caption-animate="slideInUp" data-caption-delay="100"><span>Le Centre Educatif Bilingue</span><span class="font-weight-bold"> David Lavoisier</span></h2><a class="button button-default-outline button-ujarak" href="{% url 'contact:contact' %}" data-caption-animate="fadeInLeft" data-caption-delay="0">Rejoignez Nous dès maintenant</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide context-dark" data-slide-bg="{% static 'pagep/images/slider-4-slide-2-1920x678.jpg' %}">
+            <div class="swiper-slide-caption section-md">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-10">
+                    <h6 class="text-uppercase" data-caption-animate="fadeInRight" data-caption-delay="0">Une equipe de professionnels</h6>
+                    <h2 class="oh font-weight-light" data-caption-animate="slideInUp" data-caption-delay="100"><span>Faites Nous</span><span class="font-weight-bold"> Confiance</span></h2><a class="button button-default-outline button-ujarak" href="{% url 'contact:contact' %}" data-caption-animate="fadeInLeft" data-caption-delay="0">Rejoignez Nous dès maintenant</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide context-dark" data-slide-bg="{% static 'pagep/images/slider-4-slide-3-1920x678.jpg' %}">
+            <div class="swiper-slide-caption section-md">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-10">
+                    <h6 class="text-uppercase" data-caption-animate="fadeInRight" data-caption-delay="0">Construisez dès aujourd'hui l'avenir de nos Enfants</h6>
+                    <h2 class="oh font-weight-light" data-caption-animate="slideInUp" data-caption-delay="100"><span>La Reussite avec nous est</span><span class="font-weight-bold"> Une Evidence </span></h2><a class="button button-default-outline button-ujarak" href="{% url 'contact:contact' %}" data-caption-animate="fadeInLeft" data-caption-delay="0">Rejoignez Nous dès maintenant</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Swiper Pagination-->
+        <div class="swiper-pagination"></div>
+      </section>
+      <!-- Section Box Categories-->
+      <section class="section section-lg section-top-1 bg-gray-4">
+        <div class="container offset-negative-1">
+          <div class="box-categories cta-box-wrap">
+            <div class="box-categories-content">
+              <div class="row justify-content-center">
+                <div class="col-md-4 wow fadeInDown col-9" data-wow-delay=".2s">
+                  <ul class="list-marked-2 box-categories-list">
+                    <li><a href="#"><img src="{% static 'pagep/images/cta-1-368x420.jpg' %}" alt="" width="368" height="420"/></a>
+                      <h5 class="box-categories-title">Enseignement Maternel et primaire</h5>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-4 wow fadeInDown col-9" data-wow-delay=".2s">
+                  <ul class="list-marked-2 box-categories-list">
+                    <li><a href="#"><img src="{% static 'pagep/images/cta-2-368x420.jpg' %}" alt="" width="368" height="420"/></a>
+                      <h5 class="box-categories-title">Enseignement secondaire Général</h5>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-4 wow fadeInDown col-9" data-wow-delay=".2s">
+                  <ul class="list-marked-2 box-categories-list">
+                    <li><a href="#"><img src="{% static 'pagep/images/cta-3-368x420.jpg' %}" alt="" width="368" height="420"/></a>
+                      <h5 class="box-categories-title">Enseignement secondaire Technique</h5>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div><a class="link-classic wow fadeInUp" href="{% url 'about_us:about' %}">Plus encore<span></span></a>
+          <!-- Owl Carousel-->
+        </div>
+      </section>
+      <!-- Discover New Horizons-->
+      <section class="section section-sm section-first bg-default text-md-left">
+        <div class="container">
+          <div class="row row-50 align-items-center justify-content-center justify-content-xl-between">
+            <div class="col-lg-6 text-center wow fadeInUp"><img src="{% static 'pagep/images/index-3-556x382.jpg' %}" alt="" width="556" height="382"/>
+            </div>
+            <div class="col-lg-6 wow fadeInRight" data-wow-delay=".1s">
+              <div class="box-width-lg-470">
+                <h3>Decouvrez un nouvel Horizon</h3>
+                <!-- Bootstrap tabs-->
+                <div class="tabs-custom tabs-horizontal tabs-line tabs-line-big tabs-line-style-2 text-center text-md-left" id="tabs-7">
+                  <!-- Nav tabs-->
+                  <ul class="nav nav-tabs">
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="#tabs-7-1" data-toggle="tab">À propos</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-7-2" data-toggle="tab">Nous choisir</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-7-3" data-toggle="tab">Notre Mission</a></li>
+                  </ul>
+                  <!-- Tab panes-->
+                  <div class="tab-content">
+                    <div class="tab-pane fade show active" id="tabs-7-1">
+                      <p>Le centre Educatif Bilingue David Lavoisier est un pionier dans l'Enseignement primaire, secondaire général et technique. Avec plus de 14 ans d'expérience et une équipe de professionnels devoués, nous avons les secrets pour la réussite de vos Enfants.</p>
+                      <div class="group-md group-middle"><a class="button button-secondary button-pipaluk" href="{% url 'contact:contact' %}">Rejoignez Nous</a><a class="button button-black-outline button-md" href="{% url 'about_us:about' %}">Lire plus</a></div>
+                    </div>
+                    <div class="tab-pane fade" id="tabs-7-2">
+                      <p>Nous choisir est la chose la plus logique à faire. Vos enfants qui seront également les notres, beneficieront d'un cadre agréable pour leur éducation, d'un cortège d'enseignants hautement qualifés et d'une formation qui leur permettra non seulement de réussir à leurs différents examens mais également de reussir au sein de la societé.</p>
+                      <div class="group-md group-middle"><a class="button button-secondary button-pipaluk" href="{% url 'contact:contact' %}">Rejoignez Nous</a><a class="button button-black-outline button-md" href="{% url 'about_us:about' %}">Lire plus</a></div>
+                    </div>
+                    <div class="tab-pane fade" id="tabs-7-3">
+                      <p>Nous avons une seule et unique mission qui est celle d'assurer la reussite de nos apprenants. Nous y sommes toujours parvenus et nos pourcentages de reussite le preouvent à suffisance</p>
+                      <div class="group-md group-middle"><a class="button button-secondary button-pipaluk" href="{% url 'contact:contact' %}">Rejoignez Nous</a><a class="button button-black-outline button-md" href="{% url 'about_us:about' %}">Nos chiffres</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--	Our Services-->
+      <section class="section section-sm">
+        <div class="container">
+          <h3>Ce que nous vous offrons</h3>
+          <div class="row row-30">
+            <div class="col-sm-6 col-lg-4">
+              <article class="box-icon-classic">
+                <div class="unit box-icon-classic-body flex-column flex-md-row text-md-left flex-lg-column text-lg-center flex-xl-row text-xl-left">
+                  <div class="unit-left">
+                    <div class="box-icon-classic-icon fl-bigmug-line-equalization3"></div>
+                  </div>
+                  <div class="unit-body">
+                    <h5 class="box-icon-classic-title"><a href="#">Un suivi personnalisé de chaque apprenant</a></h5>
+                    <p class="box-icon-classic-text"> Nos professionnels de l'éducation réveillerons le génie qui sommeille en chacun de vos enfants.</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <article class="box-icon-classic">
+                <div class="unit box-icon-classic-body flex-column flex-md-row text-md-left flex-lg-column text-lg-center flex-xl-row text-xl-left">
+                  <div class="unit-left">
+                    <div class="box-icon-classic-icon fl-bigmug-line-circular220"></div>
+                  </div>
+                  <div class="unit-body">
+                    <h5 class="box-icon-classic-title"><a href="#">La réussite aux examens officiels</a></h5>
+                    <p class="box-icon-classic-text">Notre peronnel enseignant travaille de facon rigoureuse pour assurer le succès de nos apprenants aux differents examens officiels</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <article class="box-icon-classic">
+                <div class="unit box-icon-classic-body flex-column flex-md-row text-md-left flex-lg-column text-lg-center flex-xl-row text-xl-left">
+                  <div class="unit-left">
+                    <div class="box-icon-classic-icon fl-bigmug-line-favourites5"></div>
+                  </div>
+                  <div class="unit-body">
+                    <h5 class="box-icon-classic-title"><a href="#">Un environnement de qualité</a></h5>
+                    <p class="box-icon-classic-text"> Au Centre Educatif Bilingue David Lavoisier, vos enfants beneficieront d'un environ impeccable pour leurs études, des aires de jeux bien équipées et une quantine qui respecte rigoureusement les règles d'hygiène.</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <article class="box-icon-classic">
+                <div class="unit box-icon-classic-body flex-column flex-md-row text-md-left flex-lg-column text-lg-center flex-xl-row text-xl-left">
+                  <div class="unit-left">
+                    <div class="box-icon-classic-icon fl-bigmug-line-headphones32"></div>
+                  </div>
+                  <div class="unit-body">
+                    <h5 class="box-icon-classic-title"><a href="#">Lien étroit avec les parents</a></h5>
+                    <p class="box-icon-classic-text">Les enseignants du Centre Educatif Bilingue David Lavoisier sont en contact permanent avec les differents parents d'élèves pour un suivi plus accentué de ces derniers.</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <article class="box-icon-classic">
+                <div class="unit box-icon-classic-body flex-column flex-md-row text-md-left flex-lg-column text-lg-center flex-xl-row text-xl-left">
+                  <div class="unit-left">
+                    <div class="box-icon-classic-icon fl-bigmug-line-hot67"></div>
+                  </div>
+                  <div class="unit-body">
+                    <h5 class="box-icon-classic-title"><a href="#">Cours de soutien tous les Samedis</a></h5>
+                    <p class="box-icon-classic-text">ONotre équipe offre aux differents apprenants des cours de soutien tous les samedis pour revenir en détails sur leurs differentes incompréhensions.</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <article class="box-icon-classic">
+                <div class="unit box-icon-classic-body flex-column flex-md-row text-md-left flex-lg-column text-lg-center flex-xl-row text-xl-left">
+                  <div class="unit-left">
+                    <div class="box-icon-classic-icon fl-bigmug-line-wallet26"></div>
+                  </div>
+                  <div class="unit-body">
+                    <h5 class="box-icon-classic-title"><a href="#">Des frais de scolarité accessibles</a></h5>
+                    <p class="box-icon-classic-text">Les frais de scolarité au Centre Educatif Bilingue David Lavoisier tient compte de la conjoncture economique et reste accessible à tous les parents.</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Hot tours-->
+      <section class="section section-sm bg-default">
+        <div class="container">
+          <h3 class="oh-desktop"><span class="d-inline-block wow slideInDown">Nos Enseignements</span></h3>
+          <div class="row row-sm row-40 row-md-50">
+            <div class="col-sm-6 col-md-12 wow fadeInRight">
+              <!-- Product Big-->
+              <article class="product-big">
+                <div class="unit flex-column flex-md-row align-items-md-stretch">
+                  <div class="unit-left"><a class="product-big-figure" href="#"><img src="{% static 'pagep/images/product-big-1-600x366.jpg' %}" alt="" width="600" height="366"/></a></div>
+                  <div class="unit-body">
+                    <div class="product-big-body">
+                      <h5 class="product-big-title"><a href="#">Enseignement maternel et primaire</a></h5>
+                      <div class="group-sm group-middle justify-content-start">
+                        <div class="product-big-rating"><span class="icon material-icons-star"></span><span class="icon material-icons-star"></span><span class="icon material-icons-star"></span><span class="icon material-icons-star"></span><span class="icon material-icons-star_half"></span></div><a class="product-big-reviews" href="#">Avis des différents parents</a>
+                      </div>
+                      <p class="product-big-text">Le Centre Educatif Bilingue David Lavoisier dispose d'un cadre idéal pour l'enseignement des tous petits. Des salles de classe bien aérées et des aires de jeux bien équipées.</p><a class="button button-black-outline button-ujarak" href="contact-us.html">Visitez dès maintenant</a>
+                      <div class="product-big-price-wrap"><span class="product-big-price">1</span></div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-12 wow fadeInLeft">
+              <!-- Product Big-->
+              <article class="product-big">
+                <div class="unit flex-column flex-md-row align-items-md-stretch">
+                  <div class="unit-left"><a class="product-big-figure" href="#"><img src="{% static 'pagep/images/product-big-2-600x366.jpg' %}" alt="" width="600" height="366"/></a></div>
+                  <div class="unit-body">
+                    <div class="product-big-body">
+                      <h5 class="product-big-title"><a href="#">Enseignement général</a></h5>
+                      <div class="group-sm group-middle justify-content-start">
+                        <div class="product-big-rating"><span class="icon material-icons-star"></span><span class="icon material-icons-star"></span><span class="icon material-icons-star"></span><span class="icon material-icons-star"></span><span class="icon material-icons-star_half"></span></div><a class="product-big-reviews" href="#">Avis des differents parents</a>
+                      </div>
+                      <p class="product-big-text">Le centre Educatif Bilingue David Lavoisier forme les apprenants de la 6ième en Terminale dans les série scientifiques (C et D) et littéraires (A4 Espagnol et A4 Allemand)</p><a class="button button-black-outline button-ujarak" href="contact-us.html">Visitez dès maintenant</a>
+                      <div class="product-big-price-wrap"><span class="product-big-price">2</span></div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <!-- Product Big-->
+            <article class="product-big">
+              <div class="unit flex-column flex-md-row align-items-md-stretch">
+                <div class="unit-left"><a class="product-big-figure" href="#"><img src="{% static 'pagep/images/product-big-3-600x366.jpg' %}" alt="" width="600" height="366"/></a></div>
+                <div class="unit-body">
+                  <div class="product-big-body">
+                    <h5 class="product-big-title"><a href="#">Enseignement Technique</a></h5>
+                    <div class="group-sm group-middle justify-content-start">
+                      <div class="product-big-rating"><span class="icon material-icons-star"></span><span class="icon material-icons-star"></span><span class="icon material-icons-star"></span><span class="icon material-icons-star"></span><span class="icon material-icons-star_half"></span></div><a class="product-big-reviews" href="#">Avis des différents parents</a>
+                    </div>
+                    <p class="product-big-text">Le Centre Educatif Bilingue David Lavoisier dispose d'un cadre idéal pour l'enseignement technique avec des salles de TP adaptées. Nos filières sont les suivantes: 
+                      <ul class="row-6 list-0 list-marked list-marked-md list-marked-secondary list-custom-2">
+                        <li><a href="#">F3 Electricité</a></li>
+                        <li><a href="#">F4 Génie civil</a></li>
+                        <li><a href="#">F5 Froid et climatisation</a></li>
+                        <li><a href="#">Couture sur mesure</a></li>
+                        <li><a href="#">ESF</a></li>
+                        <li><a href="#">Menuiserie</a></li>
+                      </ul>
+                    </p><a class="button button-black-outline button-ujarak" href="{% url 'contact:contact' %}">Visitez dès maintenant</a>
+                    <div class="product-big-price-wrap"><span class="product-big-price">3</span></div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-sm-6 col-md-12 wow fadeInLeft">
+          </div>
+        </div>
+      </section>
+      <!-- Different People-->
+      <section class="section section-sm">
+        <div class="container">
+          <h3 class="title-block find-car oh"><span class="d-inline-block wow slideInUp">Differentes Personnes — Une mission commune</span></h3>
+          <div class="row row-30 justify-content-center box-ordered">
+            <div class="col-sm-6 col-md-5 col-lg-3">
+              <!-- Team Modern-->
+              <article class="team-modern">
+                <div class="team-modern-header"><a class="team-modern-figure" href="#"><img class="img-circles" src="{% static 'pagep/images/user-1-118x118.jpg' %}" alt="" width="118" height="118"/></a>
+                  <svg x="0px" y="0px" width="270px" height="70px" viewbox="0 0 270 70" enable-background="new 0 0 270 70" xml:space="preserve">
+                    <g>
+                      <path fill="#161616" d="M202.085,0C193.477,28.912,166.708,50,135,50S76.523,28.912,67.915,0H0v70h270V0H202.085z"></path>
+                    </g>
+                  </svg>
+                </div>
+                <div class="team-modern-caption">
+                  <h6 class="team-modern-name"><a href="#">KAGHO Germain</a></h6>
+                  <p class="team-modern-status">Fondateur</p>
+                  <h6 class="team-modern-phone"><a href="tel:#">+237 6 99 51 70 30</a></h6>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-5 col-lg-3">
+              <!-- Team Modern-->
+              <article class="team-modern">
+                <div class="team-modern-header"><a class="team-modern-figure" href="#"><img class="img-circles" src="{% static 'pagep/images/user-2-118x118.jpg' %}" alt="" width="118" height="118"/></a>
+                  <svg x="0px" y="0px" width="270px" height="70px" viewbox="0 0 270 70" enable-background="new 0 0 270 70" xml:space="preserve">
+                    <g>
+                      <path fill="#161616" d="M202.085,0C193.477,28.912,166.708,50,135,50S76.523,28.912,67.915,0H0v70h270V0H202.085z"></path>
+                    </g>
+                  </svg>
+                </div>
+                <div class="team-modern-caption">
+                  <h6 class="team-modern-name"><a href="#">NDJITAT TATCHOU Cyrille</a></h6>
+                  <p class="team-modern-status">Principal</p>
+                  <h6 class="team-modern-phone"><a href="tel:#">+237 6 80 40 51 57</a></h6>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-5 col-lg-3">
+              <!-- Team Modern-->
+              <article class="team-modern">
+                <div class="team-modern-header"><a class="team-modern-figure" href="#"><img class="img-circles" src="{% static 'pagep/images/user-3-118x118.jpg' %}" alt="" width="118" height="118"/></a>
+                  <svg x="0px" y="0px" width="270px" height="70px" viewbox="0 0 270 70" enable-background="new 0 0 270 70" xml:space="preserve">
+                    <g>
+                      <path fill="#161616" d="M202.085,0C193.477,28.912,166.708,50,135,50S76.523,28.912,67.915,0H0v70h270V0H202.085z"></path>
+                    </g>
+                  </svg>
+                </div>
+                <div class="team-modern-caption">
+                  <h6 class="team-modern-name"><a href="#">TCHOUASSI Charles</a></h6>
+                  <p class="team-modern-status">Vice Principal</p>
+                  <h6 class="team-modern-phone"><a href="tel:#">+237 6 51 88 14 88</a></h6>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-5 col-lg-3">
+              <!-- Team Modern-->
+              <article class="team-modern">
+                <div class="team-modern-header"><a class="team-modern-figure" href="#"><img class="img-circles" src="{% static 'pagep/images/user-4-118x118.jpg' %}" alt="" width="118" height="118"/></a>
+                  <svg x="0px" y="0px" width="270px" height="70px" viewbox="0 0 270 70" enable-background="new 0 0 270 70" xml:space="preserve">
+                    <g>
+                      <path fill="#161616" d="M202.085,0C193.477,28.912,166.708,50,135,50S76.523,28.912,67.915,0H0v70h270V0H202.085z"></path>
+                    </g>
+                  </svg>
+                </div>
+                <div class="team-modern-caption">
+                  <h6 class="team-modern-name"><a href="#">KIFACK Benjamin D.S.J</a></h6>
+                  <p class="team-modern-status">Assistant</p>
+                  <h6 class="team-modern-phone"><a href="tel:#">+237 6 78 81 19 33</a></h6>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section Subscribe-->
+      <section class="section bg-default text-center offset-top-50">
+        <div class="parallax-container" data-parallax-img="{% static 'pagep/images/parallax-1-1920x850.jpg' %}">
+          <div class="parallax-content section-xl section-inset-custom-1 context-dark bg-overlay-2-21">
+            <div class="container">
+              <h2 class="heading-2 oh font-weight-normal wow slideInDown"><span class="d-block font-weight-semi-bold">La reussite est à votre porte. Osez la franchir.</span><span class="d-block font-weight-light">Nous vous attendons!</span></h2>
+              <p class="text-width-medium text-spacing-75 wow fadeInLeft" data-wow-delay=".1s">Le centre Educatif Bilingue David Lavoisier est sans aucun doute le cadre optimal pour la fomation intégrale de vos enfants. Faites nous confiance et nous ferons le reste. </p><a class="button button-secondary button-pipaluk" href="{% url 'contact:contact' %}">Rejoignez nous dès maintenant</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--	Instagrram wondertour-->
+      <section class="section section-sm section-top-0 section-fluid section-relative bg-gray-4">
+        <div class="container-fluid">
+          <h6 class="gallery-title">Galerie</h6>
+          <!-- Owl Carousel-->
+          <div class="owl-carousel owl-classic owl-dots-secondary" data-items="1" data-sm-items="2" data-md-items="3" data-lg-items="4" data-xl-items="5" data-xxl-items="6" data-stage-padding="15" data-xxl-stage-padding="0" data-margin="30" data-autoplay="true" data-nav="true" data-dots="true">
+            <!-- Thumbnail Classic-->
+            <article class="thumbnail thumbnail-mary">
+              <div class="thumbnail-mary-figure"><img src="{% static 'pagep/images/gallery-image-1-270x195.jpg' %}" alt="" width="270" height="195"/>
+              </div>
+              <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="images/gallery-image-1-1200x800-original.jpg" data-lightgallery="item"><img src="images/gallery-image-1-270x195.jpg" alt="" width="270" height="195"/></a>
+              </div>
+            </article>
+            <!-- Thumbnail Classic-->
+            <article class="thumbnail thumbnail-mary">
+              <div class="thumbnail-mary-figure"><img src="{% static 'pagep/images/gallery-image-2-270x195.jpg' %}" alt="" width="270" height="195"/>
+              </div>
+              <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="images/gallery-image-2-1200x800-original.jpg" data-lightgallery="item"><img src="images/gallery-image-2-270x195.jpg" alt="" width="270" height="195"/></a>
+              </div>
+            </article>
+            <!-- Thumbnail Classic-->
+            <article class="thumbnail thumbnail-mary">
+              <div class="thumbnail-mary-figure"><img src="{% static 'pagep/images/gallery-image-3-270x195.jpg' %}" alt="" width="270" height="195"/>
+              </div>
+              <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="images/gallery-image-3-1200x800-original.jpg" data-lightgallery="item"><img src="images/gallery-image-3-270x195.jpg" alt="" width="270" height="195"/></a>
+              </div>
+            </article>
+            <!-- Thumbnail Classic-->
+            <article class="thumbnail thumbnail-mary">
+              <div class="thumbnail-mary-figure"><img src="{% static 'pagep/images/gallery-image-4-270x195.jpg' %}" alt="" width="270" height="195"/>
+              </div>
+              <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="images/gallery-image-4-1200x800-original.jpg" data-lightgallery="item"><img src="images/gallery-image-4-270x195.jpg" alt="" width="270" height="195"/></a>
+              </div>
+            </article>
+            <!-- Thumbnail Classic-->
+            <article class="thumbnail thumbnail-mary">
+              <div class="thumbnail-mary-figure"><img src="{% static 'pagep/images/gallery-image-5-270x195.jpg' %}" alt="" width="270" height="195"/>
+              </div>
+              <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="images/gallery-image-5-1200x800-original.jpg" data-lightgallery="item"><img src="images/gallery-image-5-270x195.jpg" alt="" width="270" height="195"/></a>
+              </div>
+            </article>
+            <!-- Thumbnail Classic-->
+            <article class="thumbnail thumbnail-mary">
+              <div class="thumbnail-mary-figure"><img src="{% static 'pagep/images/gallery-image-6-270x195.jpg' %}" alt="" width="270" height="195"/>
+              </div>
+              <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="images/gallery-image-6-1200x800-original.jpg" data-lightgallery="item"><img src="images/gallery-image-6-270x195.jpg" alt="" width="270" height="195"/></a>
+              </div>
+            </article>
+            <!-- Thumbnail Classic-->
+            <article class="thumbnail thumbnail-mary">
+              <div class="thumbnail-mary-figure"><img src="{% static 'pagep/images/gallery-image-7-270x195.jpg' %}" alt="" width="270" height="195"/>
+              </div>
+              <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="{% static 'pagep/images/gallery-image-7-1200x800-original.jpg' %}" data-lightgallery="item"><img src="images/gallery-image-7-270x195.jpg" alt="" width="270" height="195"/></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <footer class="section footer-corporate context-dark">
+        <div class="footer-corporate-inset">
+          <div class="container">
+            <div class="row row-40 justify-content-lg-between">
+              <div class="col-sm-6 col-md-12 col-lg-3 col-xl-4">
+                <div class="oh-desktop">
+                  <div class="wow slideInRight" data-wow-delay="0s">
+                    <h6 class="text-spacing-100 text-uppercase">Contactez Nous</h6>
+                    <ul class="footer-contacts d-inline-block d-sm-block">
+                      <li>
+                        <div class="unit">
+                          <div class="unit-left"><span class="icon fa fa-phone"></span></div>
+                          <div class="unit-body"><a class="link-phone" href="tel:#">+237 678811933</a></div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="unit">
+                          <div class="unit-left"><span class="icon fa fa-envelope"></span></div>
+                          <div class="unit-body"><a class="link-aemail" href="mailto:#">cebdavidlavoisier@gmail.com</a></div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="unit">
+                          <div class="unit-left"><span class="icon fa fa-location-arrow"></span></div>
+                          <div class="unit-body"><a class="link-location" href="{% url 'contact:contact' %}">Efoulan Pont, Yaoundé, Cameroun</a></div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-5 col-lg-3 col-xl-4">
+                <div class="oh-desktop">
+                  <div class="wow slideInDown" data-wow-delay="0s">
+                    <h6 class="text-spacing-100 text-uppercase">Actu</h6>
+                    <!-- Post Minimal 2-->
+                    <article class="post post-minimal-2">
+                      <p class="post-minimal-2-title"><a href="#">Renovation des differents Btiments</a></p>
+                      <div class="post-minimal-2-time">
+                        <time datetime="2019-05-04">Aout 2024</time>
+                      </div>
+                    </article>
+                    <!-- Post Minimal 2-->
+                    <article class="post post-minimal-2">
+                      <p class="post-minimal-2-title"><a href="#">Remise des bulletins annuels et prix</a></p>
+                      <div class="post-minimal-2-time">
+                        <time datetime="2019-05-04">28 Mai 2024</time>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-11 col-md-7 col-lg-5 col-xl-4">
+                <div class="oh-desktop">
+                  <div class="wow slideInLeft" data-wow-delay="0s">
+                    <h6 class="text-spacing-100 text-uppercase">Liens rapides</h6>
+                    <ul class="row-6 list-0 list-marked list-marked-md list-marked-secondary list-custom-2">
+                      <li><a href="{% url 'about_us:about' %}">À Propos de nous</a></li>
+                      <li><a href="#">Nos batiments</a></li>
+                      <li><a href="#">Notre équipe</a></li>
+                      <li><a href="#">Galerie photos</a></li>
+                      <li><a href="#">Blog</a></li>
+                    </ul>
+                    <div class="group-md group-middle justify-content-sm-start"><a class="button button-lg button-primary button-ujarak" href="contact-us.html">Rejoignez nous dès maintenant</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-corporate-bottom-panel">
+          <div class="container">
+            <div class="row justfy-content-xl-space-berween row-10 align-items-md-center2">
+              <div class="col-sm-6 col-md-4 text-sm-right text-md-center">
+                <div>
+                  <ul class="list-inline list-inline-sm footer-social-list-2">
+                    <li><a class="icon fa fa-facebook" href="#"></a></li>
+                    <li><a class="icon fa fa-twitter" href="#"></a></li>
+                    <li><a class="icon fa fa-google-plus" href="#"></a></li>
+                    <li><a class="icon fa fa-instagram" href="#"></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 order-sm-first">
+                <!-- Rights-->
+                <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>CEB David Lavoisier</span>. Tous droits reservés. Design fait par <a href="https://wa.me/678811933">Benjamin KIFACK</a></p>
+              </div>
+              <div class="col-sm-6 col-md-4 text-md-right">
+                <p class="rights"><a href="#">Politique de confidentialité</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- Global Mailform Output-->
+    <div class="snackbars" id="form-output-global"></div>
+    <!-- Javascript-->
+    <script src="{% static 'contact/js/core.min.js' %}"></script>
+    <script src="{% static 'contact/js/script.js' %}"></script>
+  </body>
+</html>
